@@ -1,0 +1,11 @@
+services:
+  dataiku:
+    container_name: dataiku
+    build: .
+    ports:
+      - "10000:10000"
+    volumes:
+      - dataiku:/home/dataiku/dss
+
+volumes:
+  dataiku:

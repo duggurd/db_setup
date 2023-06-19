@@ -1,0 +1,10 @@
+services:
+  airflow:
+    build: .
+    container_name: airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      # - ./airflow.cfg:/opt/airflow/airflow.cfg
+      # - ./dags:/opt/airflow/dags
+    command: standalone
